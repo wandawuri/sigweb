@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #012A4A;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 70%;
+  font-size: 13px;
+  background-color: #0000;
+  height:450px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #023E84;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Detective Conan Characters</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Ran Mouri</a></li>
+      <li><a href="#">Ai Haibara</a></li>
+      <li><a href="#">Black Organization</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Edogawa Conan</h1>
+    <p>
+    <img src="https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Conan_Edogawa_Profile.png/413px-Conan_Edogawa_Profile.png" alt="Edogawa Conan" style="float:right;width:500px;height:300px;">
+	Edogawa Conan is the alias used by Shinichi Kudo in his shrunken form. <br>Shinichi took the appearance of his six or seven-year-old self after being exposed to a prototype poison called APTX 4869, which he had been <br>forced to swallow by two men in black later revealed to be members of the Black Organization. The poison de-aged Shinichi's entire body except for his <br>nervous system, and therefore he still has the personality, memories, and incredible deductive ability of his teenage self.
+    </p>
+    
+    <p>Conan's goal is to hunt down the Black Organization and have them arrested <br>for their crimes, as well as find an antidote to the APTX 4869. To do so he plans to make the washout detective Kogoro Mouri famous in hopes of attracting cases related to the Black Organization.</p>
+  
+  
+ 	<p>Conan is often treated as a separate character from Shinichi by fans and <br>often viewed as the main character of the series while Shinichi is viewed as <br>a recurring character. He has become a popular figure in Japan and even appeared on numerous occasions in different anime series <br>(i.e. mainly cameo appearances) as well as other media.</p>
+  </article>
+</section>
+
+<footer>
+  <p>"There is only one truth!" - Edogawa Conan</p>
+  <p>Copyright @Wanda</p>
+</footer>
+
+</body>
+</html>
+
